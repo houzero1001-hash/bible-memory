@@ -1,20 +1,15 @@
-# Bible Memory
+# Bible Memory 2.0
 
-简体和合本与 KJV 中英经文背诵 PWA。双语合为一个任务，支持离线背诵、间隔复习、本地持久存储与 JSON 备份。
+圣经经文与讲道摘句背诵 PWA。和合本＋KJV 双语合为一段，讲道摘句按主题收藏。首页统一学习复习，两类每日新学数量分别设置，掌握后仍长期巩固。
 
-无需注册或 API Key。用户收藏和进度只保存在浏览器，不上传 GitHub。
+讲道摘句支持标题、主题、讲员、听道日期、链接、时间点、原话/转述及单独的个人感悟。感悟不纳入背诵正文。
 
-## 开发与部署
+内容及进度只保存在浏览器，无账户、无上传、无付费 API。支持离线、JSON v2 备份和旧 v1 备份导入。
 
-需要 Node.js 24，无第三方依赖。
+## 开发
 
-```sh
-npm test
-npm run build
-```
+Node.js 24，无第三方依赖。运行 npm test 与 npm run build。GitHub Pages 发布 main 分支 docs/，更新时同步 dist/ 并保留 docs/.nojekyll。
 
-GitHub Pages 发布 main 分支 docs/ 目录。更新时将最新 dist/ 内容同步至 docs/ 后提交，保留 docs/.nojekyll。请勿上传本地备份、密钥或个人经文库。
+## 手机
 
-## iPhone 安装
-
-使用 Safari 打开 Pages 网站 → 分享 → 添加到主屏幕。首次联网加载后可离线使用。不同浏览器和设备的数据不自动同步，可导出/导入 JSON 迁移。
+Safari 打开网站 → 分享 → 添加到主屏幕。升级后请关闭旧页面再打开。经文、摘句与进度不自动跨设备同步，可通过 JSON 备份迁移。
